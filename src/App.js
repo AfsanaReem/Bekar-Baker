@@ -1,12 +1,16 @@
+import { ThemeProvider } from "@mui/material";
 import { RouterProvider } from "react-router-dom";
 import router from "./Routes/Routes";
+import theme from "./theme/theme";
 
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={router}></RouterProvider>
-    </div>
+    <RouterProvider router={router}>
+      <ThemeProvider theme={theme}>
+
+      </ThemeProvider>
+    </RouterProvider >
   );
 }
 

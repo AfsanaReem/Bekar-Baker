@@ -1,15 +1,19 @@
+import { Container } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from '../SharedComponents/Footer';
-import Navbar from '../SharedComponents/Navbar';
+import Navbar from '../SharedComponents/Navbar'
+import Footer from '../SharedComponents/Footer'
 
 const Main = () => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </div>
+        <Box>
+            <Container maxWidth='lg'>
+                <Navbar></Navbar>
+                <Outlet></Outlet>
+                <Footer></Footer>
+            </Container>
+        </Box>
     );
 };
 
