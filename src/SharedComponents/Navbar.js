@@ -45,7 +45,7 @@ export default function Navbar(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" sx={{ backgroundColor: 'transparent', boxShadow: 'none', mt: 2, }}>
+            <AppBar component="nav" sx={{ backgroundColor: '#fbe7e7', boxShadow: 'none', pt: 1, }}>
                 <Container sx={{ borderBottom: '1px solid #f4cccc' }}>
                     <Toolbar>
                         <IconButton
@@ -63,7 +63,7 @@ export default function Navbar(props) {
                             component="div"
                             sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' }, color: '#d85555' }}
                         >
-                            Bekar Baker
+                            Bekar's Bakery
                         </Typography>
 
                         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -93,7 +93,7 @@ export default function Navbar(props) {
                     {drawer}
                 </Drawer>
             </Box>
-            <Box component="main" sx={{ p: 3 }}>
+            <Box component="main" >
                 <Toolbar />
             </Box>
         </Box >
